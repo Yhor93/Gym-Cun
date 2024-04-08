@@ -4,7 +4,7 @@
 
 Badge en Desarollo GitHub Org's stars 🚧 Proyecto en Construcción 🚧<br>
 
-🔨Funcionalidades del proyecto<br>
+🔨Funcionalidades del proyecto<br><br>
 Funcionalidad 1: Muestra Rutinas Para Trabajo En Casa<br>
 Funcionalidad 2: Muestra Rutinas Para Trabajo En Gym<br>
 Funcionalidad 3: Genera Consejos Nuricionales Segun<br> 
