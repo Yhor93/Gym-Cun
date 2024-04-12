@@ -1,0 +1,185 @@
+/*Estilo para el Body*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ff9999, #ffffff);
+}
+
+/*Estilo para el logo*/
+.logo img {
+    width: 250px;
+}
+
+/*Estilo para la barra de navegacion */
+.navbar {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(92, 85, 85, 1) 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    /* Texto en blanco */
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #c72222;
+}
+
+/* Estilos para el banner */
+.banner {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 34px;
+
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-item {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.banner-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.banner-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.banner-item:hover .banner-title {
+    color: red; 
+}
+.banner-item:hover img {
+    transform: scale(1.05);
+}
+
+.content-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-item {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    scroll-margin-top: 80px; /* Ajusta este valor según la altura de tu barra de navegación */
+}
+
+.content-item h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilos Footer*/
+footer {
+
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(92, 85, 85, 1) 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    /* Color del texto de los enlaces */
+    text-decoration: none;
+    /* Sin subrayado en los enlaces */
+    margin-bottom: 10px;
+    /* Espacio entre enlaces */
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Subrayado al pasar el mouse */
+    color: #f4f3f3;
+}
+
+footer p {
+    margin-bottom: 10px;
+    /* Espacio entre párrafos */
+}
+
+.logos-pagos {
+    margin-top: 20px;
+    /* Espacio entre categorías y logos de pagos */
+    order: 1;
+    /* Cambiar el orden de visualización a la izquierda */
+}
+
+.logos-pagos img {
+    width: 50px;
+    /* Tamaño de los íconos de pagos */
+    margin: 0 10px;
+    /* Espacio entre los íconos */
+}

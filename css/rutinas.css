@@ -1,0 +1,165 @@
+/*Estilo para el Body*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Estilo para el logo*/
+.logo img {
+    width: 250px;
+}
+
+/*Estilo para la barra de navegacion */
+.navbar {
+    background-color: #fffdfd;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: rgb(243, 18, 18);
+    text-decoration: none;
+
+}
+
+.nav-links li a:hover {
+    color: rgb(51, 17, 17);
+}
+
+.mensaje {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.mensaje h1 {
+    text-align: center;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+
+.mensaje-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-img {
+    margin-right: 50px;
+}
+
+.mensaje-img img {
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mensaje-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5); 
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttonR {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-right: 500px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #626160;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttonE {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #626160;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttonR:hover,
+.buttonE:hover {
+    background-color: #f10f0b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilos Footer*/
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    /* Color del texto de los enlaces */
+    text-decoration: none;
+    /* Sin subrayado en los enlaces */
+    margin-bottom: 10px;
+    /* Espacio entre enlaces */
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Subrayado al pasar el mouse */
+}
+
+footer p {
+    margin-bottom: 10px;
+    /* Espacio entre párrafos */
+}
+
+.logos-pagos {
+    margin-top: 20px;
+    /* Espacio entre categorías y logos de pagos */
+    order: 1;
+    /* Cambiar el orden de visualización a la izquierda */
+}
+
+.logos-pagos img {
+    width: 50px;
+    /* Tamaño de los íconos de pagos */
+    margin: 0 10px;
+    /* Espacio entre los íconos */
+}

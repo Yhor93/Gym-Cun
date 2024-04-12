@@ -4,22 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GYM SPARTACUS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/stylos.css">
     <script src="/js/function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo">
-            <a href="https://www.online-convert.com/es/result#j=b72efb0b-eda9-4ab7-9059-d1e3b38bb4b5"></a>
-            <img src="/imagenes/logo1-1.png" alt="Logo">
+            <a href="index.html">
+                <img src="/imagenes/logo1-1-rem.png" alt="Logo">
+            </a>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="#">Contacto</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Iniciar Sesion</a></li>
         </ul>
     </nav>
     <div class="carousel-container">
@@ -29,13 +36,10 @@
             <img src="/imagenes/carru2.png" alt="Imagen 3">
             <img src="/imagenes/carru3.png" alt="Imagen 4">
             <img src="/imagenes/carru4.png" alt="Imagen 5">
-            <!-- Agregamos duplicados de las imágenes para el carrusel infinito -->
-            <img src="/imagenes/carru.png" alt="Imagen 1">
-            <img src="/imagenes/carru1.png" alt="Imagen 2">
-            <img src="/imagenes/carru2.png" alt="Imagen 3">
-            <img src="/imagenes/carru3.png" alt="Imagen 4">
-            <img src="/imagenes/carru4.png" alt="Imagen 5">
         </div>
+        <div class="image-counter">1/5</div>
+        <button class="prev-button">&#10094;</button>
+        <button class="next-button">&#10095;</button>
     </div>
     <div class="planes-container">
         <div class="titulo-planes">
@@ -43,40 +47,51 @@
             <p>Presentamos una variedad de planes diseñados para impulsar tu progreso y alcanzar tus metas de
                 entrenamiento de manera efectiva. Desde el plan básico hasta opciones más completas como el semestral y
                 el anual, cada uno está diseñado para brindarte apoyo continuo y una guía sólida en tu viaje hacia una
-                versión más fuerte de ti mismo. Además, con nuestro exclusivo plan 2x1, podrás entrenar con tu persona favorita.
+                versión más fuerte de ti mismo. Además, con nuestro exclusivo plan 2x1, podrás entrenar con tu persona
+                favorita.
                 ¡Únete a nosotros y haz de cada entrenamiento un paso más hacia tu mejor versión!</p>
         </div>
         <div class="imagenes-planes">
             <div class="imagen-container-planes">
-                <img class="imagen-plan" src="/imagenes/basico.png" alt="Imagen 1">
+                <img class="imagen-plan-front" src="/imagenes/basicoF.png" alt="Imagen 1 front">
+                <img class="imagen-plan-back" src="/imagenes/basicoB.png" alt="Imagen 1 back">
                 <h3 class="titulo-imagen">BASICO</h3>
             </div>
             <div class="imagen-container-planes">
-                <img class="imagen-plan" src="/imagenes/semestral.jpg" alt="Imagen 2">
+                <img class="imagen-plan-front" src="/imagenes/semestralF.jpg" alt="Imagen 2 front">
+                <img class="imagen-plan-back" src="/imagenes/semestralB.png" alt="Imagen 2 back">
                 <h3 class="titulo-imagen">SEMESTRAL</h3>
             </div>
             <div class="imagen-container-planes">
-                <img class="imagen-plan" src="/imagenes/anual.jpg" alt="Imagen 3">
+                <img class="imagen-plan-front" src="/imagenes/anualF.jpg" alt="Imagen 3 front">
+                <img class="imagen-plan-back" src="/imagenes/anualB.png" alt="Imagen back 2">
                 <h3 class="titulo-imagen">ANUAL</h3>
             </div>
             <div class="imagen-container-planes">
-                <img class="imagen-plan" src="/imagenes/2x1.jpg" alt="Imagen 4">
+                <img class="imagen-plan-front" src="/imagenes/2x1F.jpg" alt="Imagen 4 front">
+                <img class="imagen-plan-back" src="/imagenes/2x1B.png" alt="Imagen 2 back">
                 <h3 class="titulo-imagen">2X1</h3>
             </div>
         </div>
     </div>
     <div class="card-container">
         <div class="card">
-            <img src="/imagenes/rutinas.png" alt="Imagen 1">
-            <div class="text">ELIJE TU<br><br> RUTINA</div>
+            <a href="/html/rutinas.html" target="_blank">
+                <img src="/imagenes/rutinas.png" alt="Imagen 1">
+                <div class="text">ELIJE TU<br><br> RUTINA</div>
+            </a>
         </div>
         <div class="card">
-            <img src="/imagenes/tipo-cuerpo.png" alt="Imagen 2">
-            <div class="text">IDENTIFICA TU<br><br> TIPO DE CUERPO</div>
+            <a href="/html/tipoCuerpo.html" target="_blank">
+                <img src="/imagenes/tipo-cuerpo.png" alt="Imagen 2">
+                <div class="text">IDENTIFICA TU<br><br> TIPO DE CUERPO</div>
+            </a>
         </div>
         <div class="card">
-            <img src="/imagenes/alimentacion.png" alt="Imagen 3">
-            <div class="text">APRENDE SOBRE<br><br>ALIMENTACION</div>
+            <a href="/html/alimentacion.html" target="_blank">
+                <img src="/imagenes/alimentacion.png" alt="Imagen 3">
+                <div class="text">APRENDE SOBRE<br><br>ALIMENTACION</div>
+            </a>
         </div>
     </div>
     <div class="contenedor-porque">
@@ -111,18 +126,20 @@
             </div>
         </div>
     </div>
+    <div class="button-inscribirme">
+        <a href="#" class="button">ME QUIERO INSCRIBIR !</a>
+      </div>
     <div class="redes-sociales">
         <img src="/imagenes/instagram.png" alt="Facebook">
-        <img src="/imagenes/logo x.jpg" alt="Twitter">
+        <img src="/imagenes/x.png" alt="Twitter">
         <img src="/imagenes/facebook.png" alt="Instagram">
     </div>
     <footer>
-        <a href="#"> POLÍTICA DE COOKIES Y PÍXELES&nbsp;·</a>
+        <a href="#">POLÍTICA DE COOKIES Y PÍXELES&nbsp;·</a>
         <a href="#">CONDICIONES GENERALES DE USO&nbsp;·</a>
         <a href="#">PRIVACIDAD Y PROTECCIÓN DE DATOS&nbsp;·</a>
-        <a href="#">NORMATIVA DE LOS CLUBES&nbsp;·<br></a>
         <a href="#">CONTRATO&nbsp;·</a>
-        <a href="#">TERMINOS Y CONDICIONES&nbsp;·</a>
+        <a href="#">TERMINOS Y CONDICIONES&nbsp;·<br></a>
         <a href="#">POLITICAS DE PRIVACIDAD&nbsp;·</a>
         <a href="#">© GYM SPARTACUS - RESERVADOS TODOS LOS DERECHOS</a>
 
