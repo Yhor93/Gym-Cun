@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="/imagenes/logo1-1-rem.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+    <div class="contacto">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" class="formulario" id="formulario">
+            <!-- GRUPO DE NOMBRE-->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                        placeholder="Digite su nombre">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres.</p>
+            </div>
+
+            <!-- GRUPO DE APELLIDO-->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label class="formulario__label">Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellido" id="apellido"
+                        placeholder="Digite su Apellido">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El apellido debe tener minimo 4 caracteres.</p>
+            </div>
+
+            <!-- GRUPO DE NUMERO DE CEDULA-->
+            <div class="formulario__grupo" id="grupo__cedula">
+                <label class="formulario__label">Numero de Cedula</label>
+                <div class="formulario__grupo-input">
+                    <input type="cedula" class="formulario__input" name="cedula" id="Cedula">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La cedula contener de 4 a 12 digitos</p>
+            </div>
+
+            <!-- GRUPO DE NUMERO TELEFONICO-->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="telefono" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="0123456789">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El número debe tener 10 digitos</p>
+            </div>
+
+            <!-- GRUPO DE EMAIL -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label class="formulario__label">Correo Electonico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="correo@xxxxx.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten
+                    números, letras y guión bajo.</p>
+            </div>
+
+            <!-- GRUPO TERMINOS Y CONDICIONES -->
+            <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    <b class="formulario__span">Acepto los terminos y condiciones</b>
+                </label>
+            </div>
+
+            <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los <br><br> campos</i></p>
+            </div>
+
+
+            <!-- GRUPO ENVIAR -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió
+                    correctamente</p>
+                <input class="formulario__btn" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <script src="/js/contacto.js"></script>
+    <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <a href="#">POLÍTICA DE COOKIES Y PÍXELES&nbsp;·</a>
+    <a href="#">CONDICIONES GENERALES DE USO&nbsp;·</a>
+    <a href="#">PRIVACIDAD Y PROTECCIÓN DE DATOS&nbsp;·</a>
+    <a href="#">CONTRATO&nbsp;·</a>
+    <a href="#">TERMINOS Y CONDICIONES&nbsp;·<br></a>
+    <a href="#">POLITICAS DE PRIVACIDAD&nbsp;·</a>
+    <a href="#">© GYM SPARTACUS - RESERVADOS TODOS LOS DERECHOS</a>
+
+    <div class="logos-pagos">
+        <img src="/imagenes/maestro.png" alt="Logo 1">
+        <img src="/imagenes/visa.png" alt="Logo 2">
+        <img src="/imagenes/mastercard.png" alt="Logo 3">
+    </div>
+</footer>
+
+</html>

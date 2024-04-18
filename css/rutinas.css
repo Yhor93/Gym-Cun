@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(186, 170, 177, 1) 0%, rgba(14, 13, 13, 1) 100%);
 }
 
 /*Estilo para el logo*/
@@ -11,12 +12,13 @@ body {
 
 /*Estilo para la barra de navegacion */
 .navbar {
-    background-color: #fffdfd;
+    background: radial-gradient(circle, rgb(120, 39, 44) 0%, rgba(92, 85, 85, 1) 100%);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    font-size: 20px;
+  }
 
 .nav-links {
     list-style-type: none;
@@ -30,17 +32,15 @@ body {
 }
 
 .nav-links li a {
-    color: rgb(243, 18, 18);
+    color: #ffffff;
     text-decoration: none;
-
 }
 
 .nav-links li a:hover {
-    color: rgb(51, 17, 17);
+    color: #c50a0a;
 }
 
 .mensaje {
-    background-color: #f5f5f5;
     padding: 50px 0;
 }
 
@@ -48,6 +48,7 @@ body {
     text-align: center;
     font-size: 34px;
     font-family: sans-serif;
+    color: #fff;
 }
 
 .mensaje-container {
@@ -76,6 +77,7 @@ body {
 .buttons {
     text-align: center;
     margin-top: 20px;
+    font-size: 22PX;
 }
 
 .buttonR {
@@ -107,59 +109,33 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Estilos Footer*/
 footer {
-    background-color: #fff;
+    background: radial-gradient(circle, rgb(120, 39, 44) 0%, rgba(92, 85, 85, 1) 100%);
     padding: 20px;
     text-align: center;
 }
-
 footer a {
-    color: #333;
-    /* Color del texto de los enlaces */
+    color: #f8f7f7;
     text-decoration: none;
-    /* Sin subrayado en los enlaces */
-    margin-bottom: 10px;
-    /* Espacio entre enlaces */
-
+    margin-bottom: 10px; 
+   
 }
-
 footer a:hover {
-    text-decoration: underline;
-    /* Subrayado al pasar el mouse */
+    text-decoration: underline; 
+    color: #f4f3f3;
 }
 
 footer p {
-    margin-bottom: 10px;
-    /* Espacio entre párrafos */
+    margin-bottom: 10px; 
 }
 
 .logos-pagos {
-    margin-top: 20px;
-    /* Espacio entre categorías y logos de pagos */
-    order: 1;
-    /* Cambiar el orden de visualización a la izquierda */
+    margin-top: 20px; 
+    order: 1; 
 }
 
 .logos-pagos img {
-    width: 50px;
-    /* Tamaño de los íconos de pagos */
+    width: 50px; 
     margin: 0 10px;
-    /* Espacio entre los íconos */
 }
