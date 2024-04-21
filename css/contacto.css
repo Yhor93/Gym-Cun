@@ -61,7 +61,7 @@ h2 {
 .formulario__label {
     display: block;
     padding: 10px 0;
-    ;
+    font-weight: bold;
 }
 
 .formulario__grupo-input {
