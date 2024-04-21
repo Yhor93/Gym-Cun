@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #ff9999, #ffffff);
+    background: radial-gradient(circle, rgba(186, 170, 177, 1) 0%, rgba(14, 13, 13, 1) 100%);
 }
 
 /*Estilo para el logo*/
@@ -12,8 +12,7 @@ body {
 
 /*Estilo para la barra de navegacion */
 .navbar {
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(92, 85, 85, 1) 100%);
+    background: radial-gradient(circle, rgb(120, 39, 44) 0%, rgba(92, 85, 85, 1) 100%);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -33,7 +32,6 @@ body {
 
 .nav-links li a {
     color: #ffffff;
-    /* Texto en blanco */
     text-decoration: none;
 }
 
@@ -43,13 +41,14 @@ body {
 
 /* Estilos para el banner */
 .banner {
-    background-color: #f5f5f5;
     padding: 50px 0;
 }
 
 .banner h1 {
     text-align: center;
     font-size: 34px;
+    color: #fff;
+    font-weight: bolder;
 
 }
 
@@ -96,7 +95,6 @@ body {
 
 .content-section {
     padding: 50px 0;
-    background-color: #fff;
 }
 
 .content-container {
@@ -115,7 +113,7 @@ body {
 .content-item h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 .content-item p {
@@ -126,60 +124,34 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Estilos Footer*/
 footer {
-
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(92, 85, 85, 1) 100%);
+    background: radial-gradient(circle, rgb(120, 39, 44) 0%, rgba(92, 85, 85, 1) 100%);
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: #333;
-    /* Color del texto de los enlaces */
+    color: #f8f7f7;
     text-decoration: none;
-    /* Sin subrayado en los enlaces */
     margin-bottom: 10px;
-    /* Espacio entre enlaces */
-
 }
 
 footer a:hover {
     text-decoration: underline;
-    /* Subrayado al pasar el mouse */
     color: #f4f3f3;
 }
 
 footer p {
     margin-bottom: 10px;
-    /* Espacio entre párrafos */
 }
 
 .logos-pagos {
     margin-top: 20px;
-    /* Espacio entre categorías y logos de pagos */
     order: 1;
-    /* Cambiar el orden de visualización a la izquierda */
 }
 
 .logos-pagos img {
     width: 50px;
-    /* Tamaño de los íconos de pagos */
     margin: 0 10px;
-    /* Espacio entre los íconos */
 }
