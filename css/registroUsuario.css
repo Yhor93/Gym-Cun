@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
 }
 
 .nav-links {
@@ -41,7 +42,7 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #eb1616;
+    color: #c50a0a;
 }
 
 /*Estilos para el Main*/

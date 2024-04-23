@@ -53,12 +53,10 @@
      height: 660px;
      overflow: hidden;
      position: relative;
-     /* Agregamos posición relativa para el carrusel */
  }
 
  .carousel-slide {
      display: flex;
-     /* Mostrar las imágenes en una fila */
      transition: transform 0.5s ease;
  }
 
@@ -156,9 +154,7 @@
      top: 0;
      left: 0;
      transition: transform 1s;
-     /* Agrega una transición suave */
      backface-visibility: hidden;
-     /* Evita el parpadeo al girar */
  }
 
  .titulo-imagen {
@@ -169,15 +165,12 @@
  }
 
  .imagen-plan-front {
-     z-index: 2;
-     /* Asegura que la imagen frontal esté sobre la imagen de respaldo */
+     z-index: 2; /* para que la imagen frontal esté sobre la imagen de respaldo */
  }
 
  .imagen-plan-back {
-     transform: rotateY(180deg);
-     /* Inicialmente, la imagen de respaldo está girada */
-     z-index: 1;
-     /* Asegura que la imagen de respaldo esté detrás de la imagen frontal */
+     transform: rotateY(180deg); /* Inicialmente, la imagen de respaldo está girada */
+     z-index: 1; /* para que la imagen de respaldo esté detrás de la imagen frontal */
  }
 
  .imagen-container-planes:hover .imagen-plan-front {
@@ -228,7 +221,6 @@
 
  .card:hover .text {
      display: flex;
-     /* Mostrar el texto cuando se pasa el mouse sobre la tarjeta */
      border-radius: 10px;
  }
 
@@ -262,8 +254,7 @@
 
  .imagen-con-texto {
      text-align: center;
-     width: calc(25% - 20px);
-     /* Tamaño igual para los contenedores, con 20px de espacio entre ellos */
+     width: calc(25% - 20px); /* Tamaño igual para los contenedores, con 20px de espacio entre ellos */
      color: #ffffff;
 
  }
@@ -277,9 +268,7 @@
 
  .imagen-con-texto img {
      width: 100%;
-     /* Ancho de las imágenes */
      height: auto;
-     /* Altura automática para mantener la proporción */
      border: 2px solid #b60909;
      border-radius: 10px;
      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
