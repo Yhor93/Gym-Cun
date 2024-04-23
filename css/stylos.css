@@ -1,4 +1,11 @@
- /*Estilo para el Body*/
+/* Estilos Base*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilo para el Body*/
  body {
      margin: 0;
      font-family: Arial, sans-serif;
@@ -7,7 +14,7 @@
 
  /*Estilo para el logo*/
  .logo img {
-     width: 250px;
+     width: 350px;
  }
 
  /*Estilo para la barra de navegacion */
