@@ -93,15 +93,28 @@
                 </div>
                 <p class="formulario__input-error">El número debe tener 10 digitos</p>
             </div>
-
-            <!-- GRUPO TERMINOS Y CONDICIONES -->
-            <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+            <!-- GRUPO PLANES -->
+            <div class="formulario__grupo formulario__grupo-inline" id="grupo__plan">
+                <label class="formulario__label">Escoge tu plan</label>
+                <div class="formulario__grupo-input">
+                    <div class="select-container">
+                        <select class="formulario__select" name="plan" id="plan">
+                            <option disabled selected>Escoge tu plan</option>
+                            <option value="basico">Básico</option>
+                            <option value="estandar">Mensual</option>
+                            <option value="premium">Anual</option>
+                            <option value="premium-plus">2x1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+             <!-- GRUPO TERMINOS Y CONDICIONES -->
+             <div class="formulario__grupo formulario__grupo-inline" id="grupo__terminos">
                 <label class="formulario__label">
                     <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
                     <b class="formulario__span">Acepto los terminos y condiciones</b>
                 </label>
             </div>
-
             <!-- MENSAJE DE CAMPOS REQUERIDOS -->
             <div class="formulario__mensaje" id="formulario__mensaje">
                 <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>

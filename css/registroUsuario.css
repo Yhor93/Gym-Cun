@@ -115,9 +115,20 @@ main {
 }
 
 .formulario__span {
-    font-size: 1.1em;
-    font-weight: 100;
+    font-size:em;
+    font-weight: bold;
 }
+.formulario__grupo-inline {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Ajusta el espacio entre el checkbox y el dropdown según tus preferencias */
+}
+.formulario__select option {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 10px;
+}
+
 
 .formulario__checkbox {
     cursor: pointer;
@@ -181,6 +192,7 @@ main {
     display: block;
 }
 
+
 /* Estilos para la Validacion */
 .formulario__grupo-correcto .formulario__validacion-estado {
     color: #ee0f0f;
@@ -222,22 +234,17 @@ footer a:hover {
 }
 
 footer p {
-    margin-bottom: 10px;
-    /* Espacio entre párrafos */
+    margin-bottom: 10p
 }
 
 .logos-pagos {
     margin-top: 20px;
-    /* Espacio entre categorías y logos de pagos */
-    order: 1;
-    /* Cambiar el orden de visualización a la izquierda */
+    order: 1
 }
 
 .logos-pagos img {
     width: 50px;
-    /* Tamaño de los íconos de pagos */
     margin: 0 10px;
-    /* Espacio entre los íconos */
 }
 
 /* ---- RESPONSIVE ----*/
