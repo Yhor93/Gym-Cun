@@ -1,239 +1,368 @@
- /*Estilo para el Body*/
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
- /*Estilo para el logo*/
- .logo img {
-    width: 250px;
-}
-
-/*Estilo para la barra de navegacion */
-.navbar {
-    background-color: #fffdfd;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    list-style-type: none;
+/* Estilos Base*/
+* {
     margin: 0;
     padding: 0;
-    display: flex;
+    box-sizing: border-box;
 }
 
-.nav-links li {
-    margin-right: 20px;
-}
+/*Estilo para el Body*/
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background: radial-gradient(circle, rgba(186, 170, 177, 1) 0%, rgba(14, 13, 13, 1) 100%);
+ }
 
-.nav-links li a {
-    color: rgb(243, 18, 18);
-    text-decoration: none;
-    
-}
+ /*Estilo para el logo*/
+ .logo img {
+     width: 350px;
+ }
 
-.nav-links li a:hover {
-    color: rgb(51, 17, 17);
-}
-  /* Estilos para el carrusel */
-.carousel-container {
-    width: 100%;
-    height: 660px;
-    overflow: hidden; 
-    position: relative; /* Agregamos posición relativa para el carrusel */
-}
+ /*Estilo para la barra de navegacion */
+ .navbar {
+     background: radial-gradient(circle, rgb(120, 39, 44) 0%, rgba(92, 85, 85, 1) 100%);
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 20px;
+ }
 
-.carousel-slide {
-    display: flex; /* Mostrar las imágenes en una fila */
-    transition: transform 0.5s ease; 
-}
+ .nav-links {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+ }
 
-.carousel-slide img {
-    width: 100%;
-    height: auto; 
-}
-/*Estilos para los Planes*/
-.planes-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    padding: 20px;
-}
-/* Estilo titulo y parrafo planes */
-.titulo-planes {
-    text-align: center; 
-}
+ .nav-links li {
+     margin-right: 20px;
+ }
 
-.titulo-planes h2 {
-    margin-bottom: 120px; 
-    margin-top: 100px;
-}
+ .nav-links li a {
+     color: #ffffff;
+     text-decoration: none;
+ }
 
-.titulo-planes p {
-    text-align: justify; 
-    line-height: 2.0; 
-}
-/*Estilos Imagenes Planes*/
-.imagenes-planes {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    margin-top: 50px;
-    margin-right: 100px;
-}
+ .nav-links li a:hover {
+     color: #c50a0a;
+ }
 
-.imagen-container-planes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+ /* Estilos para el carrusel */
+ .carousel-container {
+     width: 100%;
+     height: 660px;
+     overflow: hidden;
+     position: relative;
+ }
 
-.imagen-plan {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    transition: box-shadow 0.5s;
+ .carousel-slide {
+     display: flex;
+     transition: transform 0.5s ease;
+ }
 
-}
-.imagen-plan:hover {
-    box-shadow: 0 0 50px rgba(255, 0, 0, 0.5);
-}
-/*Estilos para las CARD*/
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 100px auto; 
-}
-.card {
-    position: relative;
-    width: calc(33.33% - 10px);
-    margin-right: 10px;
-    overflow: hidden; 
-}
+ .carousel-slide img {
+     width: 100%;
+     max-width: 100%;
+     height: auto;
+ }
 
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
+ .image-counter {
+     position: absolute;
+     bottom: 10px;
+     right: 10px;
+     color: white;
+     background-color: rgba(0, 0, 0, 0.5);
+     padding: 5px 10px;
+     border-radius: 5px;
+ }
 
-.text {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.577); 
-    color: white;
-    display: none; 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+ .prev-button,
+ .next-button {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     background-color: rgba(0, 0, 0, 0.5);
+     color: white;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 10px;
+     font-size: 24px;
+ }
 
-.card:hover .text {
-    display: flex; /* Mostrar el texto cuando se pasa el mouse sobre la tarjeta */
-    border-radius: 10px;
-}
-/*Estilos para el texto PorQue */
-.contenedor-porque {
-    text-align: center; /* Centrar el texto */
-    
-}
-.contenedor-porque h2{
-    margin-bottom: 50PX;
-    font-size: 24px;
-    color: #ff0000; 
-}
-.imagenes-con-texto {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 100px auto; 
-    
-}
-.imagen-con-texto h3{
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.imagen-con-texto {
-    text-align: center; /* Centrar el texto debajo de cada imagen */
-    width: calc(25% - 20px); /* Tamaño igual para los contenedores, con 20px de espacio entre ellos */
-    
-}
-.imagen-con-texto:hover {
-    box-shadow: 7px 7px 17px rgba(164, 8, 8, 0.5); 
-    opacity: 0.76; 
-    border-radius: 10px;
-    width: 25%;
-  }
+ .prev-button {
+     left: 10px;
+ }
 
-.imagen-con-texto img {
-    width: 100%; /* Ancho de las imágenes */
-    height: auto; /* Altura automática para mantener la proporción */
-    border: 2px solid #b60909;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
+ .next-button {
+     right: 10px;
+ }
 
-.imagen-con-texto p {
-    width: 100%; /* Ancho igual al de la imagen */
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
-    text-align: justify; /* Justificar el texto */
-    line-height: 1.5;
-}
+ /*Estilos para los Planes*/
+ .planes-container {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto auto;
+     gap: 20px;
+     padding: 20px;
+ }
 
-/*Estilos Iconos redes sociales */
-.redes-sociales {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.redes-sociales img {
-    width: 40px; 
-    margin-right: 15px;
-    transition: transform 0.3s, filter 0.3s;
-}
-.redes-sociales img:hover {
-      filter: brightness(0.7) hue-rotate(0deg);
-      transform: translateY(-15px);
-}
+ /* Estilo titulo y parrafo planes */
+ .titulo-planes {
+     text-align: center;
+     color: #ffffff;
+ }
 
-/*Estilos Footer*/
-footer {
-    background-color: #fff; 
-    padding: 20px;
-    text-align: center;
-}
-footer a {
-    color: #333; /* Color del texto de los enlaces */
-    text-decoration: none; /* Sin subrayado en los enlaces */
-    margin-bottom: 10px; /* Espacio entre enlaces */
-   
-}
-footer a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
-}
+ .titulo-planes h2 {
+     margin-bottom: 120px;
+     margin-top: 100px;
+     color: #ffffff;
+     font-weight: bolder;
+     font-size: 35px;
+ }
 
-footer p {
-    margin-bottom: 10px; /* Espacio entre párrafos */
-}
+ .titulo-planes p {
+     text-align: justify;
+     line-height: 2.0;
+     margin-left: 60px;
+     margin-right: 60px;
+     font-size: 22px;
+ }
 
-.logos-pagos {
-    margin-top: 20px; /* Espacio entre categorías y logos de pagos */
-    order: 1; /* Cambiar el orden de visualización a la izquierda */
-}
+ /* Estilos Imagenes Planes */
+ .imagenes-planes {
+     grid-column: 2;
+     grid-row: 1 / span 2;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 80px;
+     margin-top: 50px;
+     margin-right: 100px;
+ }
 
-.logos-pagos img {
-    width: 50px; /* Tamaño de los íconos de pagos */
-    margin: 0 10px; /* Espacio entre los íconos */
-}
+ .imagen-container-planes {
+     position: relative;
+     width: 200px;
+     height: 200px;
+ }
 
+ .imagen-plan-front,
+ .imagen-plan-back {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     transition: transform 1s;
+     backface-visibility: hidden;
+ }
+
+ .titulo-imagen {
+     text-align: center;
+     margin-top: 220px;
+     font-weight: bolder;
+     color: #ffffff;
+ }
+
+ .imagen-plan-front {
+     z-index: 2; /* para que la imagen frontal esté sobre la imagen de respaldo */
+ }
+
+ .imagen-plan-back {
+     transform: rotateY(180deg); /* Inicialmente, la imagen de respaldo está girada */
+     z-index: 1; /* para que la imagen de respaldo esté detrás de la imagen frontal */
+ }
+
+ .imagen-container-planes:hover .imagen-plan-front {
+     transform: rotateY(-180deg);
+ }
+
+ .imagen-container-planes:hover .imagen-plan-back {
+     transform: rotateY(0deg);
+ }
+
+ /*Estilos para las CARD*/
+ .card-container {
+     display: flex;
+     justify-content: space-between;
+     width: 90%;
+     margin: 100px auto;
+ }
+
+ .card {
+     position: relative;
+     width: calc(33.33% - 10px);
+     margin-right: 10px;
+     overflow: hidden;
+ }
+
+ .card img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 10px;
+ }
+
+ .text {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.577);
+     color: white;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 25px;
+     font-weight: bolder;
+ }
+
+ .card:hover .text {
+     display: flex;
+     border-radius: 10px;
+ }
+
+ /*Estilos para el texto PorQue */
+ .contenedor-porque {
+     text-align: center;
+
+ }
+
+ .contenedor-porque h2 {
+     margin-bottom: 50PX;
+     font-size: 24px;
+     color: #fbf9f9;
+     font-weight: bolder;
+     font-size: 30px;
+ }
+
+ .imagenes-con-texto {
+     display: flex;
+     justify-content: space-between;
+     width: 90%;
+     margin: 100px auto;
+
+ }
+
+ .imagen-con-texto h3 {
+     font-size: 23px;
+     margin: 20px;
+     color: #ffffff;
+ }
+
+ .imagen-con-texto {
+     text-align: center;
+     width: calc(25% - 20px); /* Tamaño igual para los contenedores, con 20px de espacio entre ellos */
+     color: #ffffff;
+
+ }
+
+ .imagen-con-texto:hover {
+     box-shadow: 7px 7px 17px rgba(164, 8, 8, 0.5);
+     opacity: 0.76;
+     border-radius: 10px;
+     width: 25%;
+ }
+
+ .imagen-con-texto img {
+     width: 100%;
+     height: auto;
+     border: 2px solid #b60909;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+ }
+
+ .imagen-con-texto p {
+     width: 100%;
+     margin-top: 10px;
+     text-align: justify;
+     line-height: 1.5;
+ }
+
+ /*Estilos Boton inscribirme */
+ .button-inscribirme {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 70px;
+ }
+
+ .button {
+     display: inline-block;
+     background-color: #ff0000e8;
+     color: white;
+     padding: 12px 24px;
+     text-decoration: none;
+     border-radius: 50px;
+     font-size: 18px;
+     font-weight: bold;
+     animation: pulse 1.5s infinite;
+ }
+
+ @keyframes pulse {
+     0% {
+         transform: scale(1);
+     }
+
+     50% {
+         transform: scale(1.1);
+     }
+
+     100% {
+         transform: scale(1);
+     }
+ }
+
+ /*Estilos Iconos redes sociales */
+ .redes-sociales {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 30px;
+
+ }
+
+ .redes-sociales img {
+     width: 40px;
+     margin-right: 15px;
+     transition: transform 0.3s, filter 0.3s;
+ }
+
+ .redes-sociales img:hover {
+     filter: brightness(0.7) hue-rotate(0deg);
+     transform: translateY(-15px);
+ }
+
+ /*Estilos Footer*/
+ footer {
+     background: radial-gradient(circle, rgb(120, 39, 44) 0%, rgba(92, 85, 85, 1) 100%);
+     padding: 20px;
+     text-align: center;
+ }
+
+ footer a {
+     color: #f8f7f7;
+     text-decoration: none;
+     margin-bottom: 10px;
+ }
+
+ footer a:hover {
+     text-decoration: underline;
+     color: #f4f3f3;
+ }
+
+ footer p {
+     margin-bottom: 10px;
+ }
+
+ .logos-pagos {
+     margin-top: 20px;
+     order: 1;
+ }
+
+ .logos-pagos img {
+     width: 50px;
+     margin: 0 10px;
+ }

@@ -1,0 +1,238 @@
+/*Estilo para el Body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(186,170,177,1) 0%, rgba(14,13,13,1) 100%);
+}
+
+/*Estilo para el logo*/
+.logo img {
+    width: 350px;
+}
+
+/*Estilo para la barra de navegacion */
+.navbar {
+    background: radial-gradient(circle, rgb(120, 39, 44) 0%, rgba(92, 85, 85, 1) 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #c50a0a;
+}
+
+
+/*Estilo para el formulario de contacto */
+h2 {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.contacto {
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 10px 40px;
+    background-color: #cbcaca;
+    border: 2px solid #c72222;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px #c72222;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.formulario__label {
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 90%;
+    background: transparent;
+    border-bottom: 2.5px solid #c72222;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    outline: none;
+    color: #080808;
+    font-size: 17px;
+    line-height: 45px;
+    padding: 0 10px;
+    transition: all 2s;
+}
+
+.formulario__input:focus {
+    box-shadow: 0 0 5px #992005;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 45px;
+    bottom: 15px;
+    z-index: 1000;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__input-error {
+    display: none;
+    margin-bottom: 0;
+
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__span {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.formulario__checkbox {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 10px;
+}
+
+.formulario__mensaje {
+    display: none;
+    height: 65px;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    color: #f60808;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    padding: 15px 35px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 30px 0px;
+    font-size: 17px;
+}
+
+.formulario__btn:hover {
+    background: #5f0903;
+    transition: 1s;
+}
+
+.formulario__mensaje-exito {
+    font-size: 2em;
+    color: #b80c0c;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+/* Estilos para la Validacion */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #0b0b0b;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #050505;
+}
+
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #181717;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 1px solid #111111;
+
+}
+
+/*Estilos Footer*/
+footer {
+    background: radial-gradient(circle, rgb(120, 39, 44) 0%, rgba(92, 85, 85, 1) 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #f3ecec;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #f60b0b;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.logos-pagos {
+    margin-top: 20px;
+    order: 1;
+}
+
+.logos-pagos img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+/*Estilos Responsive*/
+@media screen and (max-width:720px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+
+    .formulario__btn {
+        width: 100%;
+    }
+}
